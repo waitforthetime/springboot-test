@@ -1,0 +1,22 @@
+server:
+  port: 9090
+  servlet:
+    context-path: /helloboot
+
+spring:
+  profiles:
+    active: default
+
+---
+spring:
+  profiles: default
+custom:
+  open: true
+  key: key
+
+---
+spring:
+  profiles: dev
+custom:
+  open: true
+  key: key2
